@@ -1,0 +1,106 @@
+.navbar {
+    background-color: #f3f3f3;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.show-time {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.empresa-message {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+}
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: #212e57;
+
+}
+
+.nav-menu {
+    background-color: #f3f3f3;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    padding-left: 0;
+    /* Add this line to remove left padding */
+    z-index: 1000;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 450ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #151414;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.nav-text a:hover {
+    background-color: #212e57;
+    color: #fff;
+}
+
+.nav-menu-items {
+    width: 100%;
+    padding: 0;
+    /* Remove the padding */
+    margin-left: 0;
+    /* Add this line to remove left margin */
+}
+
+.nav-menu-items ul {
+    padding-left: 0;
+    /* Add this line to remove left padding */
+    margin-left: 0;
+    /* Add this line to remove left margin */
+}
+
+.navbar-toggle {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+span {
+    margin-left: 16px;
+}
