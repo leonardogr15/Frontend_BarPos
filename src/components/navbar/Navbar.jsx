@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -39,9 +39,9 @@ const Navbar = () => {
     <div>
       <IconContext.Provider value={{ color: "undefined" }}>
         <div className="navbar">
-          <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </Link>
+          <button type="button" className="menu-bars" aria-label="Abrir menú" aria-expanded={sidebar} onClick={showSidebar}>
+            <FaIcons.FaBars />
+          </button>
           <span className="empresa-message">BarPos</span>
           <Reloj />
         </div>
@@ -49,9 +49,9 @@ const Navbar = () => {
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
-              <Link to="#" className="menu-bars">
+              <button type="button" className="menu-bars" aria-label="Cerrar menú">
                 <AiIcons.AiOutlineClose />
-              </Link>
+              </button>
             </li>
             {SidebarData.map((item, index) => {
               return (

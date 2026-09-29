@@ -25,6 +25,8 @@
 }
 
 .menu-bars {
+    border: 0;
+    cursor: pointer;
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
